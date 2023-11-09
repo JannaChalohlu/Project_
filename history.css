@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 62.5%;
+  }
+  
+  body {
+    /* height: 100vh; */
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-image: url(/assets/images/BI-rose.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header {
+    width: 100vw;
+    height: 6rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgb(249, 235, 235) 0%, rgb(207, 238, 203) 50%, rgb(249, 235, 235) 100%);
+    box-shadow: 1px 1px 15px rgb(160, 149, 149);
+    
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 3rem;
+  }
+
+ 
+  ul li {
+    padding: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .header a {
+    text-decoration: none;
+    color: #130f40;
+  }
+
+  .header .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-left: 4rem;
+  }
+
+  .header .fa-brands:hover,
+  .fa-solid:hover, .contact:hover, .logo:hover  {
+    transform: scale(1.1);
+  }
+
+  /* Hamburger */
+
+  .header .ham {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+  }
+
+  h1, h2, h3, h4 {
+    text-shadow: 2px 2px 15px rgb(225, 221, 221);
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+  }
+  /* main section */
+
+
+  .main-history {
+    margin-top: 8rem;
+  }
+
+
+.history {
+  width: 70%;
+  margin: auto;
+}
+
+  
+.history-float {
+overflow: auto;
+}
+
+.float-right {
+float: right;
+padding-left: 2rem;
+ }
+
+.float-left {
+float:left;
+padding-right: 2rem;
+}
+
+p {
+  text-indent: 3rem;
+ }
+
+.end-of-story div {
+display: flex;
+width: 100%;
+}
+
+.click-to-buy {
+display: flex;
+justify-content: start;
+align-items: center;
+margin-left: 3rem;
+}
+
+.click-to-buy .fa-arrow-left {
+margin-right: 1rem;
+}
+
+.end-of-story div img {
+width: 200px;
+}
+
+
+.footer {
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(249, 235, 235) 0%, rgb(207, 238, 203) 50%, rgb(249, 235, 235) 100%);
+  box-shadow: 1px 1px 15px rgb(160, 149, 149);
+  }
+
+  .footer .copyright {
+    display: flex;
+  }
+
+
+  @media (max-width: 768px) {
+
+  .header .ham {
+    display: block;
+    margin-right: 3rem;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  }

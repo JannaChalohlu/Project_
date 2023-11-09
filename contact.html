@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/1850acb642.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/assets/images/craiyon_114030_Wein.png">
+   <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="header">
+        
+        <a href="index.html" class="logo">Love wine</a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="log_in.html" target="_blank"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/?lang=uk" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+                
+            </ul>
+        </nav>
+        <div class="ham"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <main class="main">
+        <h1>Love wine</h1>
+        <div class="contacs">
+            <h2>Our contacs</h2>
+            <h3>Adres:</h3>
+            <p>White Street, 33 <br>
+            Rose city<br>
+            Red country<br>
+            33557
+            </p>
+            <h3>Phones:</h3>
+            +38333555667 <br>
+            +38333444576
+            <h3>If you have any wishes or comments, please fill out the form below</h3>
+        </div>
+    <div class="form">
+        <form action="https://formspree.io/f/mrgwdapw" method="POST">
+            <label for="name">First Name</label>
+            <input type="text" id="name" name="name" placeholder="your first name" minlength="1" required>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="your last name" minlength="1" required>
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" placeholder="your email" required>
+           <h4>Please write your message</h4>
+                <textarea name="message" id="message" cols="60" rows="5" placeholder="your opinion is very important to us"></textarea>
+
+                <div class="toggle">
+                    <p>I'd like to receive news and promotions </p>
+              
+
+                <input type="checkbox" class="switcher">
+            </div>
+
+            <div class="button"><button type="submit" value="send" class="button">Submit</button></div>
+        </form>
+    </div>
+</main>
+<div>
+    
+        <footer class="footer">
+            <div class="copyright"><i class="fa-regular fa-copyright"></i><p>2023 Love Wine</p></div>
+        </footer>
+    
+</div>
+</body>
+</html>

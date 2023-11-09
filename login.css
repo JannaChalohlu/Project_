@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 62.5%;
+  }
+  
+  body {
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/assets/images/BI-rose.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header {
+    width: 100vw;
+    height: 6rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgb(249, 235, 235) 0%, rgb(207, 238, 203) 50%, rgb(249, 235, 235) 100%);
+    box-shadow: 1px 1px 15px rgb(160, 149, 149);
+    
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 3rem;
+  }
+
+ 
+  ul li {
+    padding: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .header a {
+    text-decoration: none;
+    color: #130f40;
+  }
+
+  .header .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-left: 4rem;
+  }
+
+  .header .fa-brands:hover,
+  .fa-solid:hover, .contact:hover, .logo:hover  {
+    transform: scale(1.1);
+  }
+
+  /* Hamburger */
+
+  .header .ham {
+    display: none;
+  }
+
+main {
+    width: 100%;
+    height: 100%;
+    margin-top: 13rem;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.login {
+    width: 25%;
+    margin: 10rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.login .form input, button {
+    padding: .5rem;
+    width: 250px;
+    height: 35px;
+    margin: .8rem;
+    outline: none;
+    border: 1px solid green;
+}
+
+.form input:focus {
+    border: 3px solid green;
+}
+
+.form button {
+    color: white;
+    background-color: green;
+}
+
+::placeholder {
+    color: rgb(19, 61, 19);
+}
+
+.form  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form:last-child a {
+  color: green;
+}
+.form:last-child:hover a {
+  color: rgb(39, 68, 39);
+}
+
+
+/* Sign up */
+
+.signup {
+  width: 25%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign input, button {
+  padding: .5rem;
+  width: 250px;
+  height: 35px;
+  margin: .8rem;
+  outline: none;
+  border: 1px solid green;
+}
+
+.sign input:focus {
+  border: 3px solid green;
+}
+
+.sign button {
+  color: white;
+  background-color: green;
+}
+
+@media (max-width: 768px) {
+
+  .header .ham {
+    display: block;
+    margin-right: 3rem;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  }

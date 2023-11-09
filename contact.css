@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/assets/images/BI-rose.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100wv;
+    height: 100vh;
+  }
+
+
+  .header {
+    width: 100vw;
+    height: 6rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgb(249, 235, 235) 0%, rgb(207, 238, 203) 50%, rgb(249, 235, 235) 100%);
+    box-shadow: 1px 1px 15px rgb(160, 149, 149);
+    
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 3rem;
+  }
+
+ 
+  ul li {
+    padding: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .header a {
+    text-decoration: none;
+    color: #130f40;
+  }
+
+  .header .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-left: 4rem;
+  }
+
+  .header .fa-brands:hover,
+  .fa-solid:hover, .contact:hover, .logo:hover  {
+    transform: scale(1.1);
+  }
+
+  /* Hamburger */
+
+  .header .ham {
+    display: none;
+  }
+
+  .main {
+    width: 60%;
+    margin: auto;
+    margin-top: 10rem;
+  }
+
+  h1 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+  }
+
+  h1, h2, h3, h4 {
+    margin: 1.5rem;
+  }
+
+  .contacs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label, input {
+    display: block;
+    padding: .3rem;
+    border: none;
+    background-color: transparent;
+  }
+
+ input:focus {
+    border-bottom: 1px solid rgb(88, 196, 88);
+    outline: none;
+ }
+
+ textarea {
+    outline: none;
+    resize: none;
+    background-color: inherit;
+    border: none;
+ }
+
+ textarea:focus {
+    border-bottom: 1px solid rgb(88, 196,88);
+ }
+
+
+
+ .toggle {
+  display: flex;
+  margin: 1rem;
+ }
+
+
+
+ .switcher {
+  position: relative;
+  margin-left: 2rem;
+  width: 30px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: rgb(245, 211, 217);
+  appearance: none;
+  transition: 0.3s;
+ }
+
+ .switcher:checked {
+  background-color: rgb(63, 163, 63);
+ }
+
+ .switcher::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: rgb(71, 180, 71);
+  transition: 0.3s;
+ }
+
+ .switcher:checked::before {
+  left: 16px;
+  background-color: rgb(245, 179, 201);
+ }
+
+ .button {
+  margin-top: 1rem;
+ }
+
+ .button button {
+  padding: .5rem;
+  width: 10rem;
+  color: white;
+  background-color: rgb(71, 180, 71);
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5rem;
+ }
+
+ .footer {
+  /* width: 100wv; */
+  position: fixed; 
+  height: 6rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(249, 235, 235) 0%, rgb(207, 238, 203) 50%, rgb(249, 235, 235) 100%);
+box-shadow: 1px 1px 15px rgb(160, 149, 149);
+}
+
+.footer .copyright {
+  display: flex;
+}
